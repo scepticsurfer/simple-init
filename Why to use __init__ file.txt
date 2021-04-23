@@ -1,8 +1,8 @@
-#Why to use __init__file 
+# WHY TO USE __init__ FILE: 
 
 __init__.py is meant for cases when you want a directory with several files to be a one package.
 
-MAIN LINKS:
+# MAIN LINKS:
 1.
 https://timothybramlett.com/How_to_create_a_Python_Package_with___init__py.html
 

@@ -1,6 +1,6 @@
 #Why to use __init__file 
 
-__init__.py is meant for cases that you want a directory with several files to be a one package.
+__init__.py is meant for cases when you want a directory with several files to be a one package.
 
 MAIN LINKS:
 1.

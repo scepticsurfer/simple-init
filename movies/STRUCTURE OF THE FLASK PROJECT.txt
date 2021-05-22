@@ -1,0 +1,35 @@
+https://stackoverflow.com/questions/22711087/flask-importerror-no-module-named-app
+
+Anyone looking for a simple beginner-friendly structure for the flask project may find this helpful:
+
+   |__movies 
+     |__run.py 
+     |__app     
+        ├── templates
+        │   └── index.html
+        │   └── signup.html
+        └── __init__.py
+        └── routes.py
+Here 'movies' is the name given for the main application. It contains 'run.py' and a folder called 'app'. 'app' folder contains all necessary flask files such as 'templates' folder, '__init __.py', and 'routes.py'.
+
+Contents of:
+
+# run.py:
+from app import app
+
+# __init__.py:
+from flask import Flask
+app = Flask(__name__)
+from app import routes
+app.run(debug=True)
+
+# routes.py:
+from app import app
+@app.route('/')
+@app.route('/index')
+def index():
+    return "Hello, World!"
+
+HOW TO START THE APP IN FLASK:
+1. $env:FLASK_APP="run" 
+2. flask run
